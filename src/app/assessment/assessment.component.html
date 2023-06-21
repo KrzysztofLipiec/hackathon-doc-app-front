@@ -1,0 +1,21 @@
+<form [formGroup]="formData" (ngSubmit)="getAssessmentFromApi()">
+  <div>
+    <label for="userInput">
+      user
+    </label>
+    <input id="userInput" formControlName="user">
+  </div>
+  <div>
+    <label for="boardInput">
+      board
+    </label>
+    <input id="boardInput" formControlName="board">
+  </div>
+  <div>
+    <label for="groupInput">
+      group
+    </label>
+    <input id="groupInput" formControlName="group">
+  </div>
+  <button type="submit">Go!</button>
+</form>
